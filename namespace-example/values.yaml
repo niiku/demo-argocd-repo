@@ -3,7 +3,7 @@
 # Declare variables to be passed into your templates.
 
 replicaCount: 1
-application_domain: example-namespace-example-demo2.cloud.nikio.io
+application_domain: example-demo2.cloud.nikio.io
 
 image:
   repository: bitnami/nginx
