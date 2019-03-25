@@ -5,7 +5,7 @@ metadata:
   namespace: {{ .Values.name }}
 roleRef:
   kind: ClusterRole
-  apiGroup: authorization.openshift.io
+  apiGroup: rbac.authorization.k8s.io
   name: admin
 subjects:
 - kind: User
