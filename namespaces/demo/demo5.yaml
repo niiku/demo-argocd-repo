@@ -1,0 +1,6 @@
+namespace:
+  name: demo5
+  nodeSelector: env=test
+  description: Demo Namespace
+  displayName: Demo 5
+  requestor: argocd@nikio.io
