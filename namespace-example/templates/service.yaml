@@ -4,9 +4,7 @@ metadata:
   name: {{ include "namespace-example.fullname" . }}
   labels:
     app.kubernetes.io/name: {{ include "namespace-example.name" . }}
-    helm.sh/chart: {{ include "namespace-example.chart" . }}
     app.kubernetes.io/instance: {{ .Release.Name }}
-    app.kubernetes.io/managed-by: {{ .Release.Service }}
 spec:
   type: {{ .Values.service.type }}
   ports:
