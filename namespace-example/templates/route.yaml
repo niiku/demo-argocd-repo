@@ -5,9 +5,11 @@ metadata:
       app: {{ include "namespace-example.fullname" . }}
   name: {{ include "namespace-example.fullname" . }}
 spec:
+  host: {{ .Values.application_domain | quote }}
   port:
       targetPort: http
   tls:
+      insecureEdgeTerminationPolicy: Redirect
       termination: edge
   to:
       kind: Service
