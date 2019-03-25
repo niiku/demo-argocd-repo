@@ -5,6 +5,7 @@ metadata:
   namespace: {{ .Values.name }}
 roleRef:
   name: admin
+  apiGroup: authorization.openshift.io
 subjects:
 - kind: User
   name: {{ .Values.admin }}
