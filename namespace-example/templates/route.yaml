@@ -14,3 +14,8 @@ spec:
   to:
       kind: Service
       name: {{ include "namespace-example.fullname" . }}
+    # Required fields to trick kubectl to apply routes
+      weight: 100
+status:
+  ingress:
+    - routerName: router
