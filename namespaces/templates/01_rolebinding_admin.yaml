@@ -1,0 +1,12 @@
+apiVersion: authorization.openshift.io/v1
+kind: RoleBinding
+metadata:
+  name: admin
+  namespace: {{ .Values.name }}
+roleRef:
+  name: admin
+subjects:
+- kind: User
+  name: {{ .Values.admin }}
+userNames:
+- {{ .Values.admin }}

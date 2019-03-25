@@ -3,3 +3,4 @@ nodeSelector: env=test
 description: Demo Namespace
 displayName: Demo 6
 requester: argocd@nikio.io
+admin: demo@nikio.io
