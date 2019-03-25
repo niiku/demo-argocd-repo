@@ -1,4 +1,5 @@
 apiVersion: authorization.openshift.io/v1
+groupNames: null
 kind: RoleBinding
 metadata:
   name: admin
