@@ -4,8 +4,9 @@ metadata:
   name: admin
   namespace: {{ .Values.name }}
 roleRef:
-  name: admin
+  kind: ClusterRole
   apiGroup: authorization.openshift.io
+  name: admin
 subjects:
 - kind: User
   name: {{ .Values.admin }}
